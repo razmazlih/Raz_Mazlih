@@ -98,7 +98,22 @@ body {
     max-width: 300px;
 }
 
+.main-img {
+    max-width: 500px;
+    width: 100%;
+}
+
 .main-link {
     color: brown;
-    font-size: 150%
+    font-size: 150%;
+}
+
+.main-title {
+    font-size: 50px;
+    margin: 10px;
+
+}
+
+.main-paragraph-under-img {
+    font-size: 17px;
 }
