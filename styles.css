@@ -31,6 +31,14 @@ body {
     text-decoration: none;
 }
 
+.back-button {
+    border: solid silver;
+    padding: 5px;
+    border-radius: 10px;
+    color: crimson;
+    background-color: antiquewhite;
+}
+
 .main-content {
     padding: 20px;
 }
