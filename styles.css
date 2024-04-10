@@ -77,3 +77,14 @@ body {
     display: block;
     margin-bottom: 10px;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    min-width: 200px;
+    text-align: center;
+}
