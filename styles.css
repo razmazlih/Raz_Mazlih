@@ -211,3 +211,7 @@ input, textarea {
     padding: 1px 1px 1px 5px;
     width: 100%;
 }
+
+iframe {
+    width: 100%;
+}
