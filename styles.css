@@ -1,11 +1,37 @@
 /* עיצוב כללי */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
 }
 
+/* עיצוב נוסף לפונטים */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* אנימציות */
+.main-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* עיצוב כללי */
 .header {
     background-color: #333;
     color: #fff;
@@ -119,7 +145,6 @@ body {
 .main-title {
     font-size: 50px;
     margin: 10px;
-
 }
 
 .main-paragraph-under-img {
