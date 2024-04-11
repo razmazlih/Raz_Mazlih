@@ -204,3 +204,9 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+input, textarea {
+    border-radius: 20px;
+    padding: 1px 1px 1px 5px;
+    width: 100%;
+}
