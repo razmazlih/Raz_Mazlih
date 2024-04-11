@@ -118,12 +118,17 @@ h6 {
     flex-wrap: wrap;
 }
 
+.flex-container-main {
+    width: 130%;
+}
+
 .flex-item {
     min-width: 200px;
     text-align: center;
     border: solid gray;
     border-radius: 10px;
     padding: 5px;
+    margin: 10px;
     box-shadow: gray 0px 0px 50px 5px;
     max-width: 350px;
 }
