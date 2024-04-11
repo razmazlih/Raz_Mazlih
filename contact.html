@@ -4,11 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        .header,
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            grid-row: 1;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+            grid-row: 2;
+        }
+
+        .main-content section {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .map {
+            grid-column: 1 / span 2;
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .main-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
 </head>
 
 <body>
-
+    <header class="header">
+        <h1>Contact Us</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="about.html" class="link">About</a></li>
+                <li><a href="contact.html" class="link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section>
+            <h2 class="title-secondary">Get in Touch</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="6" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section>
+            <h2 class="title-secondary">Contact Information</h2>
+            <div class="contact-info">
+                <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+                <p><strong>Email:</strong> info@example.com</p>
+                <p><strong>Phone:</strong> +123-456-7890</p>
+            </div>
+        </section>
+        <section>
+            <h2 class="title-secondary">Follow Us</h2>
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+            </div>
+        </section>
+        <section>
+            <h2 class="title-secondary">Opening Hours</h2>
+            <div class="opening-hours">
+                <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</p>
+                <p><strong>Saturday:</strong> 10:00 AM - 3:00 PM</p>
+                <p><strong>Sunday:</strong> Closed</p>
+            </div>
+        </section>
+        <section class="map">
+            <h2 class="title-secondary">Location Map</h2>
+            <div class="map">
+                <!-- Add your map embed code here -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.814899588314!2d-122.4190726848699!3d37.77492987975822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580b5cb997f11%3A0x9b81e1de7e8f5d75!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1630367505059!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <section>
+            <h2 class="title-secondary">Send Us a Message</h2>
+            <button onclick="window.scrollTo(0, 0)">Back to Top</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>All rights reserved &copy; 2024 Virtual Exhibition</p>
+    </footer>
 </body>
 
 </html>

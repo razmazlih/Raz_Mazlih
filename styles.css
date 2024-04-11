@@ -151,3 +151,51 @@ h6 {
 .main-paragraph-under-img {
     font-size: 17px;
 }
+
+/* Grid Layout */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.header,
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    grid-row: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    grid-row: 2;
+}
+
+.main-content section {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.map {
+    grid-column: 1 / span 2;
+}
+
+.footer {
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .main-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
