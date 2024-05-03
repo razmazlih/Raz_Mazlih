@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking and Food Exhibition</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Cooking and Food Exhibition</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html" class="link">Home</a></li>
+                <li><a href="../about.html" class="link">About</a></li>
+                <li><a href="../contact.html" class="link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="section">
+            <h2 class="title-secondary main-title">Cooking and Food</h2>
+            <img src="./food_and_coocking_media/Cooking_and_Food.jpg" alt="Cooking and Food" class="main-img"><br>
+            <p class="main-paragraph-under-img">Food and cooking have been central to human culture and survival since ancient times. This exhibition explores the rich history of culinary traditions and the evolution of food preparation techniques from around the world.<br><br>From traditional methods passed down through generations to innovative cooking technologies, this exhibition showcases the diversity and creativity of global cuisine. Discover unique and special food products, as well as explore the artistry of international kitchens and menus.</p>
+        </section>
+        <section class="section">
+            <h2 class="title-secondary">Featured Food Artists</h2>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <img src="./food_and_coocking_media/chef_doe.jpg" alt="chef doe" class="preview-img">
+                    <h3 class="title">Chef Doe</h3>
+                    <p class="description">Chef Doe is renowned for his innovative fusion cuisine, blending flavors from around the world to create tantalizing dishes.</p>
+                </div>
+                <div class="flex-item">
+                    <img src="./food_and_coocking_media/chef_smith.jpg" alt="chef smith" class="preview-img">
+                    <h3 class="title">Chef Smith</h3>
+                    <p class="description">Chef Smith specializes in farm-to-table cooking, emphasizing fresh, locally sourced ingredients in her delicious recipes.</p>
+                </div>
+                <div class="flex-item">
+                    <img src="./food_and_coocking_media/chef_johnson.jpg" alt="chef johnson" class="preview-img">
+                    <h3 class="title">Chef Johnson</h3>
+                    <p class="description">Chef Johnson's culinary creations are known for their artistic presentation and bold flavors, making every meal an unforgettable experience.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="title-secondary">Cooking and Food Videos</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wPuiG05qkxQ" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <section class="section">
+            <h2 class="title-secondary">Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>All rights reserved &copy; 2024 Raz Mazlih</p>
+    </footer>
+</body>
+</html>
